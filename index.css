@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+:root{
+    --RED:hsl(1, 90%, 64%);
+    --BLUE:hsl(219, 85%, 26%);
+    --WHITE:hsl(0, 0%, 100%);
+    --VERY-LIGHT-GRAIYSH-BLUE:hsl(210, 60%, 98%);
+    --LIGHT-GRAIYSH-BLUE-1:hsl(211, 68%, 94%);
+    --LIGHT-GRAIYSH-BLUE-2:hsl(205, 33%, 90%);
+    --GRAYISH-BLUE:hsl(219, 14%, 63%);
+    --DARK-GRAYISH-BLUE:hsl(219, 12%, 42%);
+    --VERY-DARK-BLUE:hsl(224, 21%, 14%);
+
+    /*Padding*/
+    --LARGE-PADDING:1rem;
+    --SMALL-PADDING:0.5REM;
+}
+body{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--LIGHT-GRAIYSH-BLUE-1);
+    padding-top:50px;
+    margin:60px 0px 60px 0px;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Jakarta Sans';
+}
+.container{
+    max-width: 725px;
+    background-color:white;
+    width:100%;
+    border-radius:10px;
+    
+}
+/*header styling*/
+.left-part-header{
+   display:flex;
+    align-items: center;
+    margin-left:30px;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-part-header p{
+    padding:6px 12px 6px 12px;
+    background-color:var(--BLUE);
+    border-radius:6px;
+    font-size: 1.2rem;
+    margin-left:12px;
+    color:white;
+    font-family: 'Jakarta Sans';
+    font-weight: 800;
+    cursor:pointer;
+}
+
+.right-part-header{
+    margin-right:30px;
+    color:var(--DARK-GRAYISH-BLUE);
+}
+.right-part-header p{
+    cursor:pointer;
+    font-weight: 500;
+    transition: color 0.15s;
+}
+.right-part-header p:hover{
+    color:var(--BLUE);
+}
+/*Comments styling*/
+.notification{
+    background-color:var(--WHITE);
+    margin-left:30px;
+    margin-right:30px;
+    cursor:pointer;
+    font-size: 1.1rem;
+    border-radius:8px;
+}
+.unread-notification{
+    background-color:var(--LIGHT-GRAIYSH-BLUE-1);
+}
+.avatar{
+    width:50px;
+    height: 50px;
+}
+.notification figure{
+    display:flex;
+    align-items: center;
+    
+}
+
+.time{
+    margin-top: 0px;
+    color:var(--DARK-GRAYISH-BLUE);
+}
+.info{
+    margin-top:16px;
+    margin-bottom:12px;
+    color:var(--DARK-GRAYISH-BLUE);
+    
+}
+.profile{
+    display:flex;
+    align-items: center;
+}
+.name{
+    font-family: 'Jakarta Sans';
+    font-weight: 800;
+    color:black;
+}
+figcaption{
+    margin-left:16px;
+    
+    
+}
+.unread{
+    width:10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color:var(--RED);
+    display:inline-block;
+    margin-left:5px;
+    
+}
+.notification:nth-child(4) .bold{
+    color:var(--BLUE);
+}
+
+.comment{
+   margin-left:106px;
+   max-width: 510px;
+   border:1px solid var(--LIGHT-GRAIYSH-BLUE-1);
+   padding:16px;
+   color:var(--DARK-GRAYISH-BLUE);
+   border-radius:8px;
+   cursor:pointer;
+   transition: background-color 0.15s;
+   
+}
+.comment:hover{
+    background-color:var(--LIGHT-GRAIYSH-BLUE-1);
+}
+.notification:nth-child(5) figure{
+    margin-bottom:0px;
+}
+.chess{
+    width:50px;
+    height: 50px;
+   
+}
+.notification:nth-child(6){
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bold{
+    font-weight: 800;
+}
+.notification:last-child .bold{
+    color:var(--BLUE);
+}
+
+@media (max-width:400px){
+    .left-part-header h1{
+        font-size:1.5rem;
+    }
+    .notification{
+        font-size:0.65rem;
+    }
+ 
+}
